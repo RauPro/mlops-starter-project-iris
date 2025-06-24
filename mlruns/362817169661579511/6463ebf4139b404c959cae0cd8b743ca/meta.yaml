@@ -1,0 +1,14 @@
+artifact_uri: mlflow-artifacts:/362817169661579511/6463ebf4139b404c959cae0cd8b743ca/artifacts
+end_time: 1749661044282
+entry_point_name: ''
+experiment_id: '362817169661579511'
+lifecycle_stage: active
+run_id: 6463ebf4139b404c959cae0cd8b743ca
+run_name: evaluate
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1749661044154
+status: 3
+tags: []
+user_id: paypa
