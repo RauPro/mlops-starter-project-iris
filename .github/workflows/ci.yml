@@ -44,7 +44,7 @@ jobs:
       run: make install
 
     - name: running training
-      run: make run-pipeline
+      run: source .venv\bin\activate | make run-pipeline
 
   test:
     runs-on: ubuntu-latest
