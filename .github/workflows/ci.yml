@@ -7,6 +7,25 @@ on:
     branches: [ main ]
 
 jobs:
+  evaluate-model:
+    runs-on: ubuntu-latest
+    needs: train-model
+    steps:
+    - uses: actions/checkout@v4
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "latest"
+
+    - name: Set up Python 3.11
+      run: uv python install 3.11
+
+    - name: Install dependencies
+      run: make install
+
+    - name: running evaluation
+      run: make run-evaluation
   train-model:
     runs-on: ubuntu-latest
     needs: test
