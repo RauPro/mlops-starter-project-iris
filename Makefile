@@ -76,4 +76,4 @@ run-pipeline: ## Run the complete ML pipeline
 	python src/train.py
 
 run-evaluate:
-    python src/evaluate.py
+	python src/evaluate.py
