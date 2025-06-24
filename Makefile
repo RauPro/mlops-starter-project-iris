@@ -10,7 +10,6 @@ setup-hooks: ## Install pre-commit hooks
 	@echo "Pre-commit hooks installed!
 
 install: ## Install dependencies
-    source .venv/bin/activate
 	uv sync --group dev
 	uv run pre-commit install
 
