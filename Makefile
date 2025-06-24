@@ -13,6 +13,7 @@ install: ## Install dependencies
 	uv sync --group dev
 	uv run pre-commit install
 
+
 pre-commit: ## Run pre-commit on all files
 	uv run pre-commit run --all-files
 
@@ -74,4 +75,6 @@ run-pipeline: ## Run the complete ML pipeline
 	python src/load_data.py
 	python src/split_dataset.py --test_size 0.2
 	python src/train.py
+
+run-evaluation:
 	python src/evaluate.py
